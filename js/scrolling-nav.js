@@ -57,7 +57,12 @@ $("#services i.fa").hover(function() {
 
 
 
+/* Blurring to focus on projects being selected. */
 
+$("#project img").hover(function() {
+	 $("#project img").toggleClass("imgblur");
+	 $(this).toggleClass("active");
+});
 
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -69,4 +74,4 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-});
+})
