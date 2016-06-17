@@ -131,16 +131,15 @@ of those sections to manage the look and feel of the site. */
     width: 262.5px;
 
     -webkit-transition:-webkit-filter 1s ease-in-out, -webkit-transform 0.3s ease-in-out;
-
-
 }
+
 
 .imgblur{
     -webkit-filter: blur(3px);
    -webkit-transform: scale(0.9); 
 }
 
-.imgblur.active {
+.img-parent.active .imgblur{
     -webkit-filter: blur(0px) !important;
     box-shadow: 
     0px 0px 0px 10px rgba(255,255,255,1), 
@@ -150,8 +149,39 @@ of those sections to manage the look and feel of the site. */
 }
 
 
+.img-parent{
+    position: relative;
+    height: auto;
+    width: auto;
+}
 
-#second-row{
+.img-parent.active {
+        -webkit-transform: scale(1.1);
+}
+
+
+
+.imgDescription{
+
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.66);
+    padding: 25% 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+.opacityToggle{
+    opacity: 1;
+}
+
+
+.second-row{
     padding-top: 100px;
 
 }
@@ -162,3 +192,7 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     background: #eee;
 }
+
+
+
+

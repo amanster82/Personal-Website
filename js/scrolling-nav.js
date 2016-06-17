@@ -59,9 +59,12 @@ $("#services i.fa").hover(function() {
 
 /* Blurring to focus on projects being selected. */
 
-$("#project img").hover(function() {
-	 $("#project img").toggleClass("imgblur");
-	 $(this).toggleClass("active");
+
+$("#project .img-parent").hover(function() {
+	console.log("inside hover");
+	 $('#project .img-parent img').toggleClass("imgblur");
+		$(this).toggleClass("active");
+	 		$(this).find(".imgDescription").toggleClass("opacityToggle");
 });
 
 
