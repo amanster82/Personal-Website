@@ -169,6 +169,7 @@ of those sections to manage the look and feel of the site. */
     display: flex;
     align-items: center;
     position: relative;
+    margin: auto;
 }
 
 .img-parent.active .img-container .img-thumbnail {
