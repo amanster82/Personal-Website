@@ -6,9 +6,22 @@
 	}
 
 	.project-section{
-		height: 150%;
+		height: 180%;
 	}
 
+		.img-parent {
+    position: relative;
+    margin-bottom: 15px;	
+	}
+   
+    .contact-section {
+    height: 60%;
+	
+	}
+
+	 .contact-section2 {
+    padding-top: 267px;
+	
 
 }
 
@@ -23,14 +36,22 @@
 	}
 
 	.project-section {
-    	height: 169%;
+    	height: 200%;
 	}
+
+	.img-parent {
+    position: relative;
+    margin-bottom: 15px;	
+	}
+
+	margin-bottom: 15px;
 
 	.about-section {
     height: auto;
 	}
     
     .contact-section {
+
     height: 60%;
 	
 	}
@@ -147,7 +168,7 @@
 	}
 
 	.project-section {
-	    height: 245%;
+	    height: 260%;
 
 	}
 
@@ -177,7 +198,7 @@
 	}
 
 	.project-section {
-	    height: 280%;
+	    height: 295%;
 
 	}
 
