@@ -47,7 +47,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 #info{
-    padding-top: 250px;
+    padding-top: 225px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -240,7 +240,8 @@ footer .glyphicon {
 .contact-section2 {
     text-align: center;
     background: #eee;
-    padding-top: 50px;
+    padding-top: 0px;
+    padding-bottom: 50px;
 }
 
 #contact2 i.fa {
