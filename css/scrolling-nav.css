@@ -90,6 +90,7 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 22px;
     text-align: center;
     background: #fff;
+    padding-top: 60px;
 }
 
 #services i.fa {
