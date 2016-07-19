@@ -1,4 +1,21 @@
 
+@media (max-width: 1366px){
+
+	#about-info{
+	    padding-top: 90px;
+	}
+
+	.project-section {
+	    height: 108%;
+	    position: relative;
+	}
+
+	.contact-section2 {
+    	padding-top: 68px;
+	}
+
+}
+
 
 @media (max-width: 1199px){
 
