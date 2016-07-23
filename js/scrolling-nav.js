@@ -44,14 +44,29 @@ $(document).ready(function(){
 
 });
 
+$("#about img").hover(
+
+//Mouse In
+    function(){
+        $(this).stop().animate({'border-color': '#FCAC45' }, 300);
+    },
+
+//Mouse Out
+    function(){
+        $(this).stop().animate({'border-color': 'white' }, 300);
+    }
+);
 
 
 
-$("#services i.fa").hover(function() {
+$("#services i.fa").hover(
 
-  console.log("inside hover");
+//Mouse In
+    function() {
     $(this).stop().animate({color: 'white', backgroundColor: '#FCAC45'}, 300);
-    }, function(){
+    }, 
+//Mouse Out
+    function(){
     $(this).stop().animate({color: '#333', backgroundColor: '#fff'}, 300);
 });
 

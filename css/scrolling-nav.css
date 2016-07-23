@@ -4,6 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
 body {
     width: 100%;
     height: 100%;
@@ -47,10 +48,44 @@ of those sections to manage the look and feel of the site. */
 }
 
 #info{
-    padding-top: 190px;
+    padding-top: 225px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: white;
+}
+
+
+.bounce {
+  position: relative;
+  bottom:0;
+  margin-top:-25px;
+  margin-left:-25px;
+  height:50px;
+  width:50px;
+  -webkit-animation:bounce 1s infinite;
+}
+
+.bounce:hover{
+    color: unset;
+    text-decoration: unset;
+}
+
+.bounce:focus{
+    color: unset;
+    text-decoration: unset;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:1;}
+}
+
+
+.arrow{
+    position: relative;
+    margin-top: 30px;
 }
 
 
