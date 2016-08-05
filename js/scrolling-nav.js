@@ -37,10 +37,10 @@ $(document).ready(function(){
 
 	// Fade In transition when user visits site for the first time
 
-	$(function(){
+	//$(function(){
 		$('#intro').hide();
-		$('#intro').fadeIn(2000);
-	});
+		$('#intro').fadeIn(3);
+	//});
 
 });
 
