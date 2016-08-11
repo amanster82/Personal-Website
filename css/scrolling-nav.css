@@ -310,3 +310,7 @@ a { color: inherit;
 
 }
 
+.modal-open{
+    overflow: none !important;
+}
+
