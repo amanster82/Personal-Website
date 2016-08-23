@@ -55,6 +55,22 @@ of those sections to manage the look and feel of the site. */
 }
 
 
+.myName{
+}
+
+.AmanBhayani{
+  -webkit-animation-delay: 1s;
+}
+
+.coolThings{
+   -webkit-animation-delay: 1.5s;
+}
+
+.arrow{
+    -webkit-animation-delay: 2s;
+}
+
+
 .bounce {
   position: relative;
   bottom:0;
