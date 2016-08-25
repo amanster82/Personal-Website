@@ -107,6 +107,7 @@ of those sections to manage the look and feel of the site. */
     color: unset;
     text-decoration: unset;
 
+
 }
 
 .arrow:hover{
@@ -146,6 +147,7 @@ of those sections to manage the look and feel of the site. */
     border-width: 4px;
     border-style: solid;
     border-color: #fff;
+    opacity: 0;
     }   
 
 
@@ -163,6 +165,12 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
     padding-top: 60px;
 }
+
+
+#services-info{
+
+}
+
 
 #services i.fa {
     border: 4px solid #FCAC45;
@@ -296,7 +304,8 @@ of those sections to manage the look and feel of the site. */
 
 .map-thing {
     min-height: 500px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
+    opacity: 0;
 }
 
 .googleMap{
@@ -330,3 +339,6 @@ a { color: inherit;
     overflow: none !important;
 }
 
+.content{
+    opacity: 0;
+}

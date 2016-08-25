@@ -127,3 +127,40 @@ $(function() {
         event.preventDefault();
     });
 })
+
+
+var $aboutsection= $('#about img');
+
+$aboutsection.waypoint(function(){
+    $aboutsection.addClass('animated bounceIn').css("opacity", "");
+    console.log("this is working!");
+
+}, { offset: '70%' });
+
+
+var $services= $('#services-info');
+
+$services.waypoint(function(){
+    $services.addClass('');
+    console.log("this is working!");
+
+}, { offset: '30%' });
+
+
+
+var $map= $('.map-thing');
+
+$map.waypoint(function(){
+    $map.addClass('animated fadeInUp');
+    console.log("this is working!");
+
+}, { offset: '30%' });
+
+
+var $contact= $('.content');
+
+$contact.waypoint(function(){
+    $contact.addClass('animated fadeInDown');
+    console.log("HELLLOOOOOOOOOO");
+}, { offset: '90%' });
+
