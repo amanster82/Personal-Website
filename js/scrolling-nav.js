@@ -129,6 +129,31 @@ $(function() {
 })
 
 
+
+var $myName=$('.myName').addClass('animated tada');
+var $AmanBhayani=$('.AmanBhayani').addClass('animated rubberBand');
+var $coolThings=$('.coolThings').addClass('animated zoomIn');
+var $arrow=$('#arrow').addClass('animated flip');
+
+
+
+$(function(){
+
+        $('.myName').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $AmanBhayani;
+        });
+
+        $('.AmanBhayani').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $coolThings;
+        });
+
+        $('coolThings').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $arrow;
+        });
+    });
+
+
+
 var $aboutsection= $('#about img');
 
 $aboutsection.waypoint(function(){
