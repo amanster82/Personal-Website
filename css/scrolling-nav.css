@@ -39,12 +39,14 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section::before {
      content: '';
-          -webkit-filter: brightness(0.5); 
-     background: url('../splash.jpg') 50% 0% no-repeat;
+     -webkit-filter: brightness(0.5);
+    background: url(../splash.jpg) 50% 0% no-repeat;
      background-size: cover;
      position: absolute;
      height: 100%;
      width: 100%;
+     -webkit-transform:translatez(0);
+
 }
 
 #info{
@@ -59,45 +61,15 @@ of those sections to manage the look and feel of the site. */
 }
 
 .AmanBhayani{
-  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .coolThings{
-   -webkit-animation-delay: 1.5s;
+animation-delay: 1.5s;
 }
 
 .arrow{
-    -webkit-animation-delay: 2s;
-}
-
-
-.bounce {
-  position: relative;
-  bottom:0;
-  margin-top:-25px;
-  margin-left:-25px;
-  height:65px;
-  width:70px;
-  -webkit-animation:bounce 1s 3 ;
-}
-
-.bounce:hover{
-
-    color: unset;
-    text-decoration: unset;
-}
-
-.bounce:focus{
-
-}
-
-@-webkit-keyframes bounce {
-
-  0%       { bottom:5px;  }
-  25%, 75% { bottom:15px; }
-  50%      { bottom:20px; }
-  100%     { bottom:1;    }
-
+ animation-delay: 2s;
 }
 
 
@@ -135,11 +107,12 @@ of those sections to manage the look and feel of the site. */
 .about-section::before {
      content: '';
           -webkit-filter: brightness(0.5); 
-     background: url('../img/about.jpg') 50% 0% no-repeat fixed;
+    background: url(../img/about.jpg) 50% 0% no-repeat;
      background-size: cover;
      position: absolute;
      height: 100%;
      width: 100%;
+-webkit-transform:translatez(0);
 }
 
  #about img{
@@ -148,6 +121,7 @@ of those sections to manage the look and feel of the site. */
     border-style: solid;
     border-color: #fff;
     opacity: 0;
+    animation-delay: 0.3s;
     }   
 
 
@@ -195,11 +169,12 @@ of those sections to manage the look and feel of the site. */
 
 .project-section::before {
      content: '';
-     background: url('../img/prjc.jpg') 50% 0% no-repeat fixed;
+     background: url('../img/prjc.jpg') 50% 0% no-repeat;
      background-size: cover;
      position: absolute;
      height: 100%;
      width: 100%;
+-webkit-transform:translatez(0);
 }
 
 

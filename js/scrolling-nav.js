@@ -38,8 +38,8 @@ $(document).ready(function(){
 	// Fade In transition when user visits site for the first time
 
 	//$(function(){
-		$('#intro').hide();
-		$('#intro').fadeIn(3);
+		//$('#intro').hide();
+		//$('#intro').fadeIn(3);
 	//});
 
 });
@@ -130,27 +130,27 @@ $(function() {
 
 
 
-var $myName=$('.myName').addClass('animated tada');
-var $AmanBhayani=$('.AmanBhayani').addClass('animated rubberBand');
-var $coolThings=$('.coolThings').addClass('animated zoomIn');
-var $arrow=$('#arrow').addClass('animated flip');
+var $myName= $('.myName').addClass('hello');
+var $AmanBhayani= $('.AmanBhayani').addClass('there');
+var $coolThings= $('.coolThings').addClass('canI');
+var $arrow= $('#arrow').addClass('doThis');
 
 
 
-$(function(){
+/*$(function(){
 
         $('.myName').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            $AmanBhayani;
+           $('.AmanBhayani').addClass('animated rubberBand');
         });
 
         $('.AmanBhayani').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            $coolThings;
+            $('.coolThings').addClass('animated zoomIn');
         });
 
-        $('coolThings').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            $arrow;
+        $('.coolThings').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $('#arrow').addClass('animated flip');
         });
-    });
+    });*/
 
 
 
@@ -163,13 +163,13 @@ $aboutsection.waypoint(function(){
 }, { offset: '70%' });
 
 
-var $services= $('#services-info');
+var $communication= $('#services i.fa');
 
-$services.waypoint(function(){
-    $services.addClass('');
+$communication.waypoint(function(){
+    $communication.addClass('animated fadeIn').css("opacity", "");
     console.log("this is working!");
 
-}, { offset: '30%' });
+}, { offset: '90%' });
 
 
 
