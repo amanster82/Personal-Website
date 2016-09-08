@@ -163,13 +163,31 @@ $aboutsection.waypoint(function(){
 }, { offset: '70%' });
 
 
-var $communication= $('#services i.fa');
+var $communication= $('#services i.fa.communication');
 
-$communication.waypoint(function(){
-    $communication.addClass('animated fadeIn').css("opacity", "");
-    console.log("this is working!");
+$communication.waypoint(
+    function(){
+        $communication.stop().animate({color: 'white', backgroundColor: '#FCAC45'}, 1000).animate({color: '#333', backgroundColor: '#fff'}, 1000);
+        this.destroy();
+}, { offset: '70%' });
 
-}, { offset: '90%' });
+
+var $design= $('#services i.fa.design');
+
+$communication.waypoint(
+    function(){
+        $design.stop().delay(1000).animate({color: 'white', backgroundColor: '#FCAC45'}, 1000).animate({color: '#333', backgroundColor: '#fff'}, 1000);
+        this.destroy();
+}, { offset: '70%' });
+
+
+var $innovation= $('#services i.fa.innovation');
+
+$communication.waypoint(
+    function(){
+        $innovation.stop().delay(2000).animate({color: 'white', backgroundColor: '#FCAC45'}, 1000).animate({color: '#333', backgroundColor: '#fff'}, 1000);
+        this.destroy();
+}, { offset: '70%' });
 
 
 

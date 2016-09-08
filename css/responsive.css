@@ -103,11 +103,16 @@
 	}
 
 	.project-section{
-		height: 150%;
+		height: 280%;
+	}
+
+	.map-thing{
+		padding-bottom: 245px
 	}
 
 	.contact-section2 {
-	    padding-top: 8px;
+	    padding-top: 10px;
+
 	}
 
 	#icons{

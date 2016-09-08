@@ -279,8 +279,12 @@ animation-delay: 1.5s;
 
 .map-thing {
     min-height: 500px;
+<<<<<<< Updated upstream
     padding-bottom: 10px;
     opacity: 0;
+=======
+    padding-bottom: 50px
+>>>>>>> Stashed changes
 }
 
 .googleMap{
