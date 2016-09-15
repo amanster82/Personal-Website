@@ -82,10 +82,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div id="info">
-                        <h2 class="myName animated tada">My name's</h2>
-                        <h1 class="AmanBhayani animated rubberBand" style="font-size: 100px"> Aman Bhayani </h1>
-                        <h2 class="coolThings animated zoomIn">I make cool things.</h2>
-                            <div class='arrow animated flip'>
+                        <h2 class="myName">My name's</h2>
+                        <h1 class="AmanBhayani" style="font-size: 100px"> Aman Bhayani </h1>
+                        <h2 class="coolThings">I make cool things.</h2>
+                            <div class='arrow'>
                                 <a class="page-scroll fa fa-arrow-down fa-5x arrow" id="arrow" href="#about"> </a>
                             </div>
                     </div>
@@ -193,7 +193,7 @@
                         <a href="#portfolioModal1" data-toggle="modal">
                         	<div id="button">
     	                    	<p>
-    								<button type="button" class="btn btn-default btn-lg">My Resume</button>
+    								<button id="button_click" type="button" class="btn btn-default btn-lg">My Resume</button>
     							</p>
                             </div>
                         </a>
@@ -589,73 +589,64 @@
                             
                             <h2>Aman Bhayani</h2>
                             <p class="item-intro text-muted">Qualifications and Experience.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
                         </div>
 
                     </div>
 
-                    <div class="col-lg-4">
-                        <div class="modal-body">
-                        <!-- Project Details Go Here -->
-                            <h3>Programming Skills</h3>
-                            <ul>
-                                <br></br>
-                                <li>Backend & Frontend development</li>
-                                <br></br>
-                                <li>Self Motivated</li>
-                                <br></br>
-                                <li>Bilingual (French/English)</li>
-                                <br></br>
-                                <li>Strong Business & Consulting Experience </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="col-lg-12">
+                    <h3 class="education animated fadeInUp">Education</h3>
+                    
+                     <div class="animated fadeInUp" id="map" style="height: 400px;"></div>
+                        
+                </div>
 
-                    <div class="col-lg-4">
-                        <div class="modal-body">
-                        <!-- Project Details Go Here -->
-                            <div id= "something"> </div>
+                    <div class="col-lg-6">
+                        <div class="modal-body animated zoomInDown">
+                            <h3>The University of Victoria <br><small> 2014 - Present</small></br></h3>
+                            <p>Switched schools to persue internship opportunities, and currently studying Computer Science Majoring in Software Engineering.</p>
                         </div>
                     </div>
 
                     <div class="col-lg-6">
-                        <div class="modal-body">
-                        <!-- Project Details Go Here -->
-                            <h3>Education</h3>
-                            <ol>
-                                <br></br>
-                                <li>Backend & Frontend development</li>
-                                <br></br>
-                                <li>Self Motivated</li>
-                                <br></br>
-                                <li>Bilingual (French/English)</li>
-                                <br></br>
-                                <li>Strong Business & Consulting Experience </li>
-                            </ol>
+                        <div class="modal-body animated zoomInDown">
+                            <h3>The University of British Columbia: Okanagan Campus <br><small> 2011 - 2014</small></br></h3>
+                            <p>Studied Microbiology, Business, and finally landed an interest in Computer Science.</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
+
+                    <div class="col-lg-12">
+                            <div class="skills">
+                                <h3>Technology Skills</h3>
+                            </div>
                         <div class="modal-body">
-                        <!-- Project Details Go Here -->
-                            <h3>Experience</h3>
-                            <ol>
-                                <br></br>
-                                <li>Backend & Frontend development</li>
-                                <br></br>
-                                <li>Self Motivated</li>
-                                <br></br>
-                                <li>Bilingual (French/English)</li>
-                                <br></br>
-                                <li>Strong Business & Consulting Experience </li>
-                            </ol>
+                            <h4>Languages</h4>
+                            <kbd> Java </kbd>
+                            <kbd> C </kbd>
+                            <kbd> Python </kbd>
+                            <kbd> HTML </kbd>
+                            <kbd> CSS </kbd>
+                            <kbd> PHP </kbd>
+                            <kbd> Javascript </kbd>
+                            <kbd> Lua </kbd>
                         </div>
                     </div>
+
+                    <div class="col-lg-12">
+                        <h3 class="Experience"> Experience </h3>
+
+
+
 
 
 
 
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -670,7 +661,10 @@
     <script src="js/jquery.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.color.js"></script>
-    <script src="js/progressbar.js"></script>
+    <!-- Google Maps Api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmEMVa2OcQrDO5KBYOxXOlA9T90pWFu14&callback" type="text/javascript"></script>
+    <script src="js/googleMaps.js"></script>
+
 
 
 

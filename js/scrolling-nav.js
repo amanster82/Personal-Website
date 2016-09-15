@@ -16,7 +16,13 @@ $(document).ready(function(){
 	
 	//hide .navbar first
 	$(".navbar").hide();
-	
+
+
+    $('.myName').addClass('animated tada');
+    $('.AmanBhayani').addClass('animated rubberBand');
+    $('.coolThings').addClass('animated zoomIn');
+    $('.arrow').addClass('animated flip');
+
 	//fade in .navbar
 	$(function(){
 		$(window).scroll(function(){
@@ -129,31 +135,6 @@ $(function() {
 })
 
 
-
-var $myName= $('.myName').addClass('hello');
-var $AmanBhayani= $('.AmanBhayani').addClass('there');
-var $coolThings= $('.coolThings').addClass('canI');
-var $arrow= $('#arrow').addClass('doThis');
-
-
-
-/*$(function(){
-
-        $('.myName').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-           $('.AmanBhayani').addClass('animated rubberBand');
-        });
-
-        $('.AmanBhayani').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            $('.coolThings').addClass('animated zoomIn');
-        });
-
-        $('.coolThings').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            $('#arrow').addClass('animated flip');
-        });
-    });*/
-
-
-
 //about
 
 var $aboutsection= $('#about img');
@@ -192,6 +173,25 @@ $innovation.waypoint(
 }, { offset: '70%' });
 
 
+
+$( "#portfolioModal1" ).scroll(function() {
+
+    var $skills=$('.skills');
+    $skills.waypoint(
+        function(){
+            $skills.addClass('animated fadeInUp');
+        console.log("!@#$%^&*(hejfkldsf;");
+
+    }, {offset: '90%'} );
+
+});
+
+
+
+
+
+
+
 //Projects
 
 
@@ -223,60 +223,25 @@ $contact.waypoint(function(){
 
 
 
-//-----------------------------------------------
+/*GOOGLE MAPS FOR RESUME SECTION*/
+$("#portfolioModal1").on('mouseenter', function() {
+  google.maps.event.trigger(map, 'resize');
 
-// Progress bars
-
-
-// progressbar.js@1.0.0 version is used
-// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
-
-
-
-require.config({
-    paths: {'progressbar': '../bower_components/progressbar.js/dist/progressbar'}
-});
-
-define(['progressbar'], function(ProgressBar) {
-    var line = new ProgressBar.Line('#something');
+  console.log("ummmmmm is it working??");
 });
 
 
 
-$(function(){
 
-var ProgressBar = require ('progressbar.js'); 
 
-var bar = new ProgressBar.Circle('#something', {
-  color: '#aaa',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
-  strokeWidth: 4,
-  trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
-  text: {
-    autoStylesomething: false
-  },
-  from: { color: '#aaa', width: 1 },
-  to: { color: '#333', width: 4 },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
 
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
 
-  }
-});
-bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar.text.style.fontSize = '2rem';
 
-bar.animate(1.0);  // Number from 0.0 to 1.0
 
-});
+
+
+
+
+
+
+
