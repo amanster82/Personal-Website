@@ -174,15 +174,53 @@ $innovation.waypoint(
 
 
 
+//=======================modal waypoints 
+
+
 $( "#portfolioModal1" ).scroll(function() {
 
-    var $skills=$('.skills');
-    $skills.waypoint(
-        function(){
-            $skills.addClass('animated fadeInUp');
-        console.log("!@#$%^&*(hejfkldsf;");
+    var $skills=$('.skills-title');
 
+    $skills.waypoint( function(){
+            $skills.addClass('animated fadeInUp');
     }, {offset: '90%'} );
+
+
+    var $pl=$('.pl');
+
+    $pl.waypoint( function(){
+            $pl.addClass('animated slideInDown').css('opacity', '');
+    }, {offset: '90%'} );
+
+
+$("#java").waypoint(function(){
+        $("#java").addClass('animated fadeInLeft').css('opacity', '');
+
+}, {offset: '70%'});
+
+
+$("#c").waypoint(function(){
+        $("#c").addClass('animated fadeInLeft').css('opacity', '');
+
+}, {offset: '70%'});
+
+$("#python").waypoint(function(){
+        $("#python").addClass('animated fadeInLeft').css('opacity', '');
+
+}, {offset: '70%'});
+
+$("#html").waypoint(function(){
+        $("#html").addClass('animated fadeInLeft').css('opacity', '');
+
+}, {offset: '70%'});
+
+
+$("#js").waypoint(function(){
+        $("#js").addClass('animated fadeInLeft').css('opacity', '');
+
+}, {offset: '70%'});
+
+
 
 });
 
