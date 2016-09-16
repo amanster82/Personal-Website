@@ -348,9 +348,7 @@ a { color: inherit;
   margin-bottom: 30px;
   margin-top: 0;
 }
-.portfolio-modal .modal-content img {
-  margin-bottom: 30px;
-}
+
 .portfolio-modal .close-modal {
   position: absolute;
   width: 75px;
