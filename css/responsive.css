@@ -14,6 +14,11 @@
     	padding-top: 68px;
 	}
 
+
+	#iconSwitch{
+		padding-top: 50px;
+	}
+
 }
 
 
@@ -103,7 +108,7 @@
 	}
 
 	.project-section{
-		height: 280%;
+		height: 110%;
 	}
 
 	.map-thing{
@@ -151,7 +156,7 @@
 	
 
 .about-section {
-	    height: 100%;
+	    height: 115%;
 	}
 
 
@@ -162,7 +167,7 @@
 
 
 	.contact-section2 {
-    	padding-top: 170px;
+    	padding-top: 20px;
 	}
 
 
@@ -225,7 +230,7 @@
 
 
 	.contact-section2 {
-    	padding-top: 268px;
+    	padding-top: 30px;
 	}
 
 	#icons{
@@ -261,7 +266,7 @@
 
 
 	.contact-section2 {
-    	padding-top: 308px;
+    	padding-top: 60px;
 	}
 
 }
