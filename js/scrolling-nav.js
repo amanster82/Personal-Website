@@ -11,6 +11,12 @@
 
 
 // My personal jQuery script
+
+    $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").hide();
+    });
+
 $(document).ready(function(){
 
 	
@@ -231,6 +237,17 @@ $("#js").waypoint(function(){
 
 
 //Projects
+
+
+$("#initialize_modal").on("click", function() {
+    console.log("it fired!")
+setTimeout(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    }, 100);
+});
+
 
 
 var $projects= $('#project .img-parent img');

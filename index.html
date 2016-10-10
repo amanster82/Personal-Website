@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
 
     <title>Aman Bhayani</title>
 
@@ -14,10 +14,12 @@
 
 
     <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet"/>
+    <link href="css/responsive.css" rel="stylesheet"/>
+    <link href="flexSlider/flexslider.css" rel="stylesheet"/>
+
     
-    <link href="css/animate.css" rel="stylesheet" > 
+    <link href="css/animate.css" rel="stylesheet" /> 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,17 +28,18 @@
     <![endif]-->
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/font-mfizz-2.3.0/font-mfizz.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/font-mfizz-2.3.0/font-mfizz.css"/>
 
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div class="se-pre-con"></div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="display: block;">
@@ -101,7 +104,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div id="about-info">
-                                <h1>About Section</h1>
+                                <h1>About Me</h1>
                                 <br><br>
                                 <img src="img/Aman.jpg" height="200px," width="200px"> 
                             <div class="col-md-12">
@@ -134,7 +137,7 @@
         <div class="container">
             <div class="row" id="services-info">
                 <div class="col-lg-12">
-                    <h1>Services Section</h1>
+                    <h1>Skills</h1>
 					<p style="padding-bottom: 50px;">
                     I have a variety of skills
                     to offer as a student pursing software development. 
@@ -194,7 +197,7 @@
                         <a href="#portfolioModal1" data-toggle="modal">
                         	<div id="button">
     	                    	<p>
-    								<button id="button_click" type="button" class="btn btn-default btn-lg">My Resume</button>
+    								<button id="button_click" type="button" class="btn btn-default btn-lg">My Experience</button>
     							</p>
                             </div>
                         </a>
@@ -209,18 +212,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                	<div id="header">
-                    	<h1>Project Section</h1>
+                	<div id="header" style="text-align: center;">
+                    	<h1>Portfolio</h1>
             		</div>
               	</div>
             </div>
 
 <!-- Project #1 -->
 	        <div class="row">
-	        	<a href="#myModal" data-toggle="modal">
+	        	<a href="#myModal" data-toggle="modal" id="initialize_modal">
 		            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 img-parent">
 	                  	<div class="img-container modal-header">
-	                        <img src="img/projects/CarbonCalc (640x417).jpg" alt="..." class="img-thumbnail imgblur" />
+
+
+
+	                        <img src="img/projects/CarbonCalc.jpg" alt="..." class="img-thumbnail imgblur" />
 	                        <div class="img-text">
 	                             <div class="project-text">Carbon Footprint Calculator</div>
 	                             <div class="project-icon"><i class="fa fa-envira"></i></div>
@@ -236,13 +242,27 @@
 									<h4 class="modal-title" id="myModalLabel">Carbon Foot Print Calculator</h4>
 							</div>
 							
-							<div class="modal-body" style="padding-bottom: 228px">
+							<div class="modal-body">
 								Using basic Carbon Calculations, formulated a program that would calculate one’s carbon footprint spread across 3 areas: Transportation, Electricity and Food. A simple java program utilizing Object-Oriented data structures and classes.
-								<div class="row">
-									<div class="col-md-12 col-md-offset-3"><img src="img/projects/stuff.jpg"/></div>
-								</div>
-								
+
+
+                                <div class="flexslider">
+                                      <ul class="slides">
+                                        <li>
+                                          <img src="img/projects/CarbonCalc/CC1.jpg" />
+                                        </li>
+                                        <li>
+                                          <img src="img/projects/CarbonCalc/CC2.jpg" />
+                                        </li>
+                                        <li>
+                                          <img src="img/projects/CarbonCalc/CC3.jpg" />
+                                        </li>
+                                      </ul>
+                                </div>
+
+
 							</div>
+
 							<div class="modal-footer">
 								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 							</div>
@@ -251,10 +271,10 @@
 				</div>
 
 <!-- Project #2 -->
-        <a href="#project2" data-toggle="modal">
+        <a href="#project2" data-toggle="modal" id="initialize_modal">
 			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 img-parent">
 				<div class="img-container">
-					<img src="img/projects/lcdMatrix (640x480).jpg" alt="..." class="img-thumbnail imgblur" />
+					<img src="img/projects/lcdMatrix.jpg" alt="..." class="img-thumbnail imgblur" />
 					<div class="img-text">
 						<div class="project-text">LCD Matrix Display</div>
 						<div class="project-icon"><i class="fa fa-envira"></i></div>
@@ -271,11 +291,24 @@
 									<h4 class="modal-title" id="myModalLabel">LCD Matrix Display</h4>
 							</div>
 							
-							<div class="modal-body" style="padding-bottom: 228px">
+							<div class="modal-body"">
 								Programmed an AVR microprocessor using AVR studios to display scrolling text to an LCD display. Programmed in C.
-								<div class="row">
-									<div class="col-md-12 col-md-offset-3"><img src="img/projects/stuff.jpg"/></div>
-								</div>
+
+
+                                <div class="flexslider">
+                                      <ul class="slides">
+                                        <li>
+                                          <img src="img/projects/CarbonCalc/CC1.jpg" />
+                                        </li>
+                                        <li>
+                                          <img src="img/projects/CarbonCalc/CC2.jpg" />
+                                        </li>
+                                        <li>
+                                          <img src="img/projects/CarbonCalc/CC3.jpg" />
+                                        </li>
+                                      </ul>
+                                </div>
+
 								
 							</div>
 							<div class="modal-footer">
@@ -285,10 +318,10 @@
 					</div>
 				</div>
 <!-- Project #3 -->
-            <a href ="#project3" data-toggle="modal">
+            <a href ="#project3" data-toggle="modal" id="initialize_modal">
 	            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 img-parent">
                     <div class="img-container">
-                        <img src="img/projects/spectator2 (640x299).jpg" alt="..." class="img-thumbnail imgblur" />
+                        <img src="img/projects/spectator2.jpg" alt="..." class="img-thumbnail imgblur" />
                         <div class="img-text">
                              <div class="project-text">Spectator Aerial Client</div>
                              <div class="project-icon"><i class="fa fa-envira"></i></div>
@@ -322,7 +355,7 @@
 
 
 <!-- Project #4 -->
-            <a href="#project4" data-toggle="modal">
+            <a href="#project4" data-toggle="modal" id="initialize_modal">
 	            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 img-parent">
                     <div class="img-container">
                         <img src="img/projects/imgtest.jpg" alt="..." class="img-thumbnail imgblur" />
@@ -360,7 +393,7 @@
 				</div>
 
 <!-- Project #5 -->
-		<div class="row second-row">
+		<div class="row second-row" id="initialize_modal">
             <a href="#project5" data-toggle="modal">
                 <div class="col-lg-4 col-lg-push-1 col-md-6 col-sm-6 col-xs-12 img-parent">
                     <div class="img-container">
@@ -400,7 +433,7 @@
 
 
 <!-- Project #6 -->                
-            <a href="#project6" data-toggle="modal">
+            <a href="#project6" data-toggle="modal" id="initialize_modal">
                 <div class="col-lg-4 col-lg col-sm-6 col-xs-12 img-parent">
                     <div class="img-container">
                             <img src="img/projects/imgtest.jpg" alt="..." class="img-thumbnail imgblur" />
@@ -437,7 +470,7 @@
 
 
 <!-- Project #7 -->
-            <a href="#project7" data-toggle="modal">
+            <a href="#project7" data-toggle="modal" id="initialize_modal">
                 <div class="col-lg-4 col-lg-pull-1 col-sm-6 col-xs-12 img-parent">
     	           <div class="img-container">
     	               <img src="img/projects/imgtest.jpg" alt="..." class="img-thumbnail imgblur" />
@@ -652,7 +685,7 @@
                     
 
                     <div class="col-lg-12" style="padding-top: 68px;">
-                        <h3 class="Experience">Experience</h3>
+                        <h3 class="Experience">Relevant Experience</h3>
                     </div>
 
                     <div class="col-lg-12">
@@ -706,6 +739,9 @@
     <!-- Google Maps Api -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmEMVa2OcQrDO5KBYOxXOlA9T90pWFu14&callback" type="text/javascript"></script>
     <script src="js/googleMaps.js"></script>
+
+    <!--FlexSlider Javascript-->
+    <script type="text/javascript" src="flexSlider/jquery.flexslider-min.js"></script>
 
 
 

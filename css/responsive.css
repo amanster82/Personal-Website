@@ -14,12 +14,36 @@
     	padding-top: 68px;
 	}
 
+}
 
-	#iconSwitch{
-		padding-top: 50px;
+
+
+
+
+@media (max-width: 1440px){
+
+	.about-section {
+	    height: 105%;
+	    position: relative;
 	}
 
+
+	.project-section {
+	    height: 105%;
+	    position: relative;
+	}
+
+	.contact-section2{
+		padding-top: 95px;
+
+	}
+
+
+
+
 }
+
+
 
 
 @media (max-width: 1199px){
@@ -47,6 +71,9 @@
 	
 
 }
+
+
+
 
 @media (max-width: 991px){
 
@@ -108,7 +135,7 @@
 	}
 
 	.project-section{
-		height: 110%;
+		height: 219%;
 	}
 
 	.map-thing{
@@ -116,7 +143,7 @@
 	}
 
 	.contact-section2 {
-	    padding-top: 10px;
+	    padding-top: 40px;
 
 	}
 
@@ -131,6 +158,11 @@
 
 @media (max-width: 640px) {
 
+
+	.intro-section{
+		height: 130%;
+	}
+
 	#info{
 		padding-top: 70px;
 	}
@@ -140,13 +172,17 @@
 		}
 
 	.about-section {
-	    height: 185%;
+	    height: 190%;
 	}
 
 
 	.project-section {
-	    height: 285%;
+	    height: 490%;
 
+	}
+
+	.contact-section{
+		height: 95%;
 	}
 
 }
@@ -220,11 +256,11 @@
 	}
 
 	.about-section {
-	    height: 120%;
+	    height: 132%;
 	}
 
 	.project-section {
-	    height: 260%;
+	    height: 292%;
 
 	}
 
