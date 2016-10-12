@@ -52,6 +52,7 @@ of those sections to manage the look and feel of the site. */
 .intro-section::before {
      content: '';
      -webkit-filter: brightness(0.5);
+     filter: brightness(0.5); /*firefox*/
     background: url(../splash.jpg) 50% 0% no-repeat;
      background-size: cover;
      position: absolute;
@@ -75,25 +76,26 @@ of those sections to manage the look and feel of the site. */
 }
 
 .AmanBhayani{
-  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; /*Firefox, opera, safari*/
 }
 
 .coolThings{
-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s; 
+    animation-delay: 1.5s; /*Firefox, opera, safari*/
 }
 
 .arrow{
- animation-delay: 2s;
+ -webkit-animation-delay: 2s; 
+ animation-delay: 2s; /*Firefox, opera, safari*/
 }
 
 
-.arrow{
+.arrow a{
     position: relative;
     margin-top: 30px;
     color: unset;
     text-decoration: unset;
-
-
 }
 
 .arrow:hover{
@@ -121,6 +123,7 @@ animation-delay: 1.5s;
 .about-section::before {
      content: '';
           -webkit-filter: brightness(0.5); 
+          filter: brightness(0.5); /*firefox*/
     background: url(../img/about.jpg) 50% 0% no-repeat;
      background-size: cover;
      position: absolute;
@@ -180,6 +183,7 @@ animation-delay: 1.5s;
 .project-section {
     height: 100%;
     position: relative;
+    padding-top: 60px;
 }
 
 
@@ -422,4 +426,9 @@ a { color: inherit;
 #map_canvas {
     width: 100%;
     height: 100%;
+}
+
+
+.maps iframe{
+    pointer-events: none;
 }

@@ -239,13 +239,56 @@ $("#js").waypoint(function(){
 //Projects
 
 
+//flexslider
 $("#initialize_modal").on("click", function() {
     console.log("it fired!")
 setTimeout(function() {
-      $('.flexslider').flexslider({
-        animation: "slide"
+      $('.flexslider1').flexslider({
+        animation: "slide",
+        prevText: "",
+        nextText: "",
       });
     }, 100);
+
+});
+
+//flexslider
+$("#initialize_modal2").on("click", function(){
+
+    setTimeout(function() {
+      $('.flexslider2').flexslider({
+        animation: "slide",
+        prevText: "",
+        nextText: "",
+      });
+    }, 100);
+
+});
+
+
+$("#initialize_modal3").on("click", function(){
+
+    setTimeout(function() {
+      $('.flexslider3').flexslider({
+        animation: "slide",
+        prevText: "",
+        nextText: "",
+      });
+    }, 100);
+
+});
+
+
+$("#initialize_modal4").on("click", function(){
+
+    setTimeout(function() {
+      $('.flexslider4').flexslider({
+        animation: "slide",
+        prevText: "",
+        nextText: "",
+      });
+    }, 100);
+
 });
 
 
