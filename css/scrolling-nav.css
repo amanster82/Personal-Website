@@ -436,6 +436,10 @@ a { color: inherit;
     pointer-events: none;
 }
 
+.maps #map{
+    pointer-events: none;
+}
+
 .parallax-window {
     min-height: 500px;
     background: transparent;

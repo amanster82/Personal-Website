@@ -38,4 +38,5 @@
 
       $('.maps').click(function () {
           $('.maps iframe').css("pointer-events", "auto");
+          $('.maps #map').css("pointer-events", "auto");
       });
