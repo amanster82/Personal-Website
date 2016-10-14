@@ -94,37 +94,37 @@ $("#project .img-parent").hover(function() {
 });
 
 
-$(".fa-envelope-o").hover(function() {
+$("#mail").hover(function() {
 
   console.log("inside hover");
-    $(this).stop().animate({color: '#ffc107', fontSize: '5em'}, 300);
+    $(this).stop().animate({color: '#ffc107', fontSize: '2.5em'}, 300);
     }, function(){
-    $(this).stop().animate({color: '#333', fontSize: '3em'}, 300);
+    $(this).stop().animate({color: 'white', fontSize: '2em'}, 300);
 });
 
 
-$(".fa-facebook-square").hover(function() {
+$("#facebook").hover(function() {
 
   console.log("inside hover");
-    $(this).stop().animate({color: '##415e9b', fontSize: '5em'}, 300);
+    $(this).stop().animate({color: '##415e9b', fontSize: '2.5em'}, 300);
     }, function(){
-    $(this).stop().animate({color: '#333', fontSize: '3em'}, 300);
+    $(this).stop().animate({color: 'white', fontSize: '2em'}, 300);
 });
 
-$(".fa-linkedin-square").hover(function() {
+$("#linkedin").hover(function() {
 
   console.log("inside hover");
-    $(this).stop().animate({color: '#0077b5', fontSize: '5em'}, 300);
+    $(this).stop().animate({color: '#0077b5', fontSize: '2.5em'}, 300);
     }, function(){
-    $(this).stop().animate({color: '#333', fontSize: '3em'}, 300);
+    $(this).stop().animate({color: 'white', fontSize: '2em'}, 300);
 });
 
-$(".fa-twitter").hover(function() {
+$("#twitter").hover(function() {
 
   console.log("inside hover");
-    $(this).stop().animate({color: '#31abf6', fontSize: '5em'}, 300);
+    $(this).stop().animate({color: '#31abf6', fontSize: '2.5em'}, 300);
     }, function(){
-    $(this).stop().animate({color: '#333', fontSize: '3em'}, 300);
+    $(this).stop().animate({color: 'white', fontSize: '2em'}, 300);
 });
 
 
@@ -232,6 +232,7 @@ $("#js").waypoint(function(){
 
 
 
+$('.parallax-window').parallax({imageSrc: 'img/computer_science.jpg'});
 
 
 

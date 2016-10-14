@@ -295,7 +295,7 @@ of those sections to manage the look and feel of the site. */
     height: 87%;
     padding-top: 50px;
     text-align: center;
-    background: #eee;
+    /*background: #eee;*/
 }
 
 
@@ -305,7 +305,9 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 10px;
     opacity: 0;
 =======
-    padding-bottom: 50px
+    padding-bottom: 50px;
+
+    background-color: rgb(229, 227, 223);
 >>>>>>> Stashed changes
 }
 
@@ -431,4 +433,9 @@ a { color: inherit;
 
 .maps iframe{
     pointer-events: none;
+}
+
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
 }
