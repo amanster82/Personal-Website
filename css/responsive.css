@@ -25,7 +25,7 @@
 	}
 
 	.project-section {
-	    height: 108%;
+	    height: 120%;
 	    position: relative;
 	}
 
@@ -60,8 +60,7 @@
 	 .contact-section2 {
     padding-top: 267px;
 	
-
-}
+	}
 
 
 
@@ -109,14 +108,12 @@
 
 	}
 
-	
-
-
 }
 
 
 
 @media (max-width: 768px){
+
   .intro-section {
 	padding: 0% 0 0;
 	}
@@ -125,8 +122,12 @@
 		padding-top: 145px;
 	}
 
+	.about-section{
+		height: 110%;
+	}
+
 	.project-section{
-		height: 219%;
+		height: 300%;
 	}
 
 	.map-thing{
