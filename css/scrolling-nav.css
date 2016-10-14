@@ -247,6 +247,7 @@ of those sections to manage the look and feel of the site. */
     align-items: center;
     position: relative;
     margin: auto;
+    border-bottom: none;
 }
 
 .img-parent.active .img-container .img-thumbnail {
