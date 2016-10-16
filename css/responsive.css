@@ -1,4 +1,4 @@
-@media (max-width: 1440px){
+@media (min-width: 1440px){
 
 	.about-section {
 	    height: 105%;
@@ -14,6 +14,10 @@
 	.contact-section2{
 		padding-top: 95px;
 
+	}
+
+		#header{
+	    padding-bottom: 100px;
 	}
 }
 
@@ -127,10 +131,6 @@
 
 	.project-section{
 		height: 219%;
-	}
-
-	.map-thing{
-		padding-bottom: 245px
 	}
 
 	.contact-section2 {
