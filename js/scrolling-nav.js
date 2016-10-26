@@ -33,7 +33,7 @@ $(document).ready(function(){
 	$(function(){
 		$(window).scroll(function(){
 		
-		if ($(this).scrollTop() > 100) 
+		if ($(this).scrollTop() > 500) 
 			{
 				$('.navbar').fadeIn();
 		
@@ -53,6 +53,20 @@ $(document).ready(function(){
 		//$('#intro').hide();
 		//$('#intro').fadeIn(3);
 	//});
+
+
+    //jQuery for page scrolling feature - requires jQuery Easing plugin
+    $(function() {
+        $('a.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 900, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
+
+
 
 });
 
@@ -119,26 +133,14 @@ $("#linkedin").hover(function() {
     $(this).stop().animate({color: 'white', fontSize: '2em'}, 300);
 });
 
-$("#twitter").hover(function() {
+$("#github").hover(function() {
 
   console.log("inside hover");
-    $(this).stop().animate({color: '#31abf6', fontSize: '2.5em'}, 300);
+    $(this).stop().animate({color: '#4caf50', fontSize: '2.5em'}, 300);
     }, function(){
     $(this).stop().animate({color: 'white', fontSize: '2em'}, 300);
 });
 
-
-
-//jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-})
 
 
 //about
@@ -232,7 +234,7 @@ $("#js").waypoint(function(){
 
 
 
-$('.parallax-window').parallax({imageSrc: 'img/computer_science.jpg'});
+//$('.parallax-window').parallax({imageSrc: 'img/computer_science.jpg'});
 
 
 
@@ -320,6 +322,15 @@ $contact.waypoint(function(){
     console.log("HELLLOOOOOOOOOO");
 }, { offset: '90%' });
 
+
+var $typewriter= $('.withLove');
+
+$typewriter.waypoint(function(){
+    
+    $typewriter.addClass('typewriter');
+    console.log("is it typewriter");
+
+}, { offset: '95%' });
 
 
 /*GOOGLE MAPS FOR RESUME SECTION*/

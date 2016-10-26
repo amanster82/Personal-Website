@@ -47,25 +47,45 @@ of those sections to manage the look and feel of the site. */
 .intro-section{
     height: 100%;
     position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .intro-section::before {
      content: '';
-     -webkit-filter: brightness(0.5);
+     -webkit-filter: brightness(0.3);
      filter: brightness(0.5); /*firefox*/
-    background: url(../splash.jpg) 50% 0% no-repeat;
+    background: url(../img/slider-background2.jpg) 50% 0% no-repeat;
+    -ms-filter: brightness(60%);
      background-size: cover;
      position: absolute;
      height: 100%;
      width: 100%;
-     -webkit-transform:translatez(0);
      left: 0;
      top: 0;
+     -webkit-transform: translate3d(0,0,1px); 
+    -webkit-backface-visibility: hidden;
+     
 
 }
 
+
+.Perfect-Center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Perfect-Center-start{
+  align-self: flex-start;
+}
+
+.Perfect-Center-end{
+  align-self: flex-end;
+}
+
+
 #info{
-    padding-top: 225px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -76,17 +96,17 @@ of those sections to manage the look and feel of the site. */
 }
 
 .AmanBhayani{
-  -webkit-animation-delay: 1s;
+ /* -webkit-animation-delay: 1s;*/
   animation-delay: 1s; /*Firefox, opera, safari*/
 }
 
 .coolThings{
-  -webkit-animation-delay: 1.5s; 
+ /* -webkit-animation-delay: 1.5s; */
     animation-delay: 1.5s; /*Firefox, opera, safari*/
 }
 
 .arrow{
- -webkit-animation-delay: 2s; 
+/* -webkit-animation-delay: 2s; */
  animation-delay: 2s; /*Firefox, opera, safari*/
 }
 
@@ -124,7 +144,7 @@ of those sections to manage the look and feel of the site. */
      content: '';
           -webkit-filter: brightness(0.5); 
           filter: brightness(0.5); /*firefox*/
-    background: url(../img/about.jpg) 50% 0% no-repeat;
+    background: black /*url(../img/about.jpg)*/ 50% 0% no-repeat;
      background-size: cover;
      position: absolute;
      height: 100%;
@@ -211,7 +231,8 @@ of those sections to manage the look and feel of the site. */
     width: 262.5px;
 
     -webkit-transition:-webkit-filter 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-        position: absolute;
+    transition:filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: absolute;
     left: 0;
     float: left;
     z-index: 0;
@@ -222,11 +243,15 @@ of those sections to manage the look and feel of the site. */
 .imgblur{
     -webkit-filter: blur(1px);
    -webkit-transform: scale(0.97); 
-}
+
+   filter: blur(1px);
+   transform: scale(0.97);
+} 
 
 
 .img-parent.active .imgblur{
-    -webkit-transform: scale(1);   
+    -webkit-transform: scale(1);
+    transform: scale(1);   
 }
 
 .img-parent{
@@ -242,7 +267,6 @@ of those sections to manage the look and feel of the site. */
     height: 178.33px;
     width: 262.5px;
     display: flex;
-    align-items: center;
     position: relative;
     margin: auto;
     border-bottom: none;
@@ -251,10 +275,12 @@ of those sections to manage the look and feel of the site. */
 .img-parent.active .img-container .img-thumbnail {
     padding: 4px;
      -webkit-filter: brightness(0.5);
+     filter: brightness(0.5);
 }
 
 .img-text {
     -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     margin-top: 5px;
     z-index: 1000;
     float: left;
@@ -441,4 +467,32 @@ a { color: inherit;
 .parallax-window {
     min-height: 500px;
     background: transparent;
+}
+
+
+.typewriter p{
+  opacity: 1 !important;
+  font-family: "Courier";
+  font-size: 15px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+    typing 4s steps(60, end),
+    blink .75s step-end infinite; 
+}
+
+#cursor {
+  animation: blink 1s infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink {
+  to{opacity: .0;}
 }
