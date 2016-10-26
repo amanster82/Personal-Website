@@ -61,7 +61,7 @@ $(document).ready(function(){
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top
-            }, 900, 'easeInOutExpo');
+            }, 1500, 'easeInOutExpo');
             event.preventDefault();
         });
     });

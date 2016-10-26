@@ -55,7 +55,7 @@ of those sections to manage the look and feel of the site. */
      content: '';
      -webkit-filter: brightness(0.3);
      filter: brightness(0.5); /*firefox*/
-    background: url(../img/slider-background2.jpg) 50% 0% no-repeat;
+    background: url(../img/coding-picture-compress.jpg) 50% 0% no-repeat;
     -ms-filter: brightness(60%);
      background-size: cover;
      position: absolute;
