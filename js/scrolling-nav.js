@@ -247,7 +247,7 @@ $("#initialize_modal").on("click", function() {
     console.log("it fired!")
 setTimeout(function() {
       $('.flexslider1').flexslider({
-        animation: "slide",
+        animation: "fade",
         prevText: "",
         nextText: "",
       });
@@ -260,7 +260,7 @@ $("#initialize_modal2").on("click", function(){
 
     setTimeout(function() {
       $('.flexslider2').flexslider({
-        animation: "slide",
+        animation: "fade",
         prevText: "",
         nextText: "",
       });
@@ -273,7 +273,7 @@ $("#initialize_modal3").on("click", function(){
 
     setTimeout(function() {
       $('.flexslider3').flexslider({
-        animation: "slide",
+        animation: "fade",
         prevText: "",
         nextText: "",
       });
@@ -286,7 +286,19 @@ $("#initialize_modal4").on("click", function(){
 
     setTimeout(function() {
       $('.flexslider4').flexslider({
-        animation: "slide",
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+      });
+    }, 100);
+
+});
+
+$("#initialize_modal6").on("click", function(){
+
+    setTimeout(function() {
+      $('.flexslider6').flexslider({
+        animation: "fade",
         prevText: "",
         nextText: "",
       });
