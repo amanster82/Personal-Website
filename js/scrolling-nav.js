@@ -126,7 +126,7 @@ $("#facebook").hover(function() {
 });
 
 $("#linkedin").hover(function() {
-
+ 
   console.log("inside hover");
     $(this).stop().animate({color: '#0077b5', fontSize: '2.5em'}, 300);
     }, function(){
@@ -185,7 +185,60 @@ $innovation.waypoint(
 //=======================modal waypoints 
 
 
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+    var $AmanBhayani=$('.tt');
+            $AmanBhayani.addClass('animated flipInX').one(animationEnd,function(){
+                $(this).removeClass('animated flipInX');
+                qualEx('.item-intro');
+    });;
+
+    function qualEx(qualEx){
+            $(qualEx).addClass('animated fadeInDown').one(animationEnd, function(){
+                 $(this).removeClass('animated fadeInDown')
+                 $(this).css('opacity', '1');
+                 
+            });
+            education('#mapEd');
+        }
+
+
+    function education(mapEd){
+            $(mapEd).addClass('animated fadeIn').one(animationEnd, function(){
+                 $(this).removeClass('animated fadeIn');
+                 $(this).css('opacity', '1');
+                 
+            });
+            university('.modal-body');
+
+    }
+
+
+    function university(uni){
+            $(uni).addClass('animated fadeIn').one(animationEnd, function(){
+                 $(this).removeClass('animated fadeIn');
+                 $(this).css('opacity', '1');
+
+             });
+    }
+
+
+    /**function map(map){
+            $(map).addClass('animated fadeInUp').one(animationEnd, function(){
+                 $(this).removeClass('animated fadeInUp')
+                 $(this).css('opacity', '1');
+                 $("#portfolioModal1").on('mouseenter', function() {
+                    google.maps.event.trigger(map, 'resize');
+
+                    console.log("ummmmmm is it working??");
+});
+            });
+
+    } **/
+
+
 $( "#portfolioModal1" ).scroll(function() {
+
 
     var $skills=$('.skills-title');
 
@@ -201,34 +254,84 @@ $( "#portfolioModal1" ).scroll(function() {
     }, {offset: '90%'} );
 
 
-$("#java").waypoint(function(){
-        $("#java").addClass('animated fadeInLeft').css('opacity', '');
+    $("#java").waypoint(function(){
+            $("#java").addClass('animated fadeInLeft').css('opacity', '');
 
-}, {offset: '70%'});
-
-
-$("#c").waypoint(function(){
-        $("#c").addClass('animated fadeInLeft').css('opacity', '');
-
-}, {offset: '70%'});
-
-$("#python").waypoint(function(){
-        $("#python").addClass('animated fadeInLeft').css('opacity', '');
-
-}, {offset: '70%'});
-
-$("#html").waypoint(function(){
-        $("#html").addClass('animated fadeInLeft').css('opacity', '');
-
-}, {offset: '70%'});
+    }, {offset: '70%'});
 
 
-$("#js").waypoint(function(){
-        $("#js").addClass('animated fadeInLeft').css('opacity', '');
+    $("#c").waypoint(function(){
+            $("#c").addClass('animated fadeInLeft').css('opacity', '');
 
-}, {offset: '70%'});
+    }, {offset: '70%'});
+
+    $("#python").waypoint(function(){
+            $("#python").addClass('animated fadeInLeft').css('opacity', '');
+
+    }, {offset: '70%'});
+
+    $("#html").waypoint(function(){
+            $("#html").addClass('animated fadeInLeft').css('opacity', '');
+
+    }, {offset: '70%'});
 
 
+    $("#js").waypoint(function(){
+            $("#js").addClass('animated fadeInLeft').css('opacity', '');
+
+    }, {offset: '70%'});
+
+
+    $(".Experience").waypoint(function(){
+            $(".Experience").addClass('animated fadeIn').css('opacity', '');
+
+    }, {offset: '70%'});
+
+
+    $(".Experience").waypoint(function(){
+            $(".Experience").addClass('animated fadeIn').css('opacity', '');
+
+    }, {offset: '70%'});
+
+
+    $("#cgi").waypoint(function(){
+            $("#cgi").addClass('animated fadeIn').css('opacity', '');
+
+    }, {offset: '70%'});
+
+       $("#title-cgi").waypoint(function(){
+            $("#title-cgi").addClass('animated fadeIn').css('opacity', '');
+
+    }, {offset: '70%'});
+
+    
+    $("#ul-cgi").waypoint(function(){
+            $("#ul-cgi").addClass('animated fadeIn').css('opacity', '');
+
+    }, {offset: '70%'});
+
+
+    $("#ombuds").waypoint(function(){
+            $("#ombuds").addClass('animated fadeIn').css('opacity', '');
+
+    }, {offset: '88%'});
+
+
+    $("#title-ombuds").waypoint(function(){
+            $("#title-ombuds").addClass('animated fadeIn').css('opacity', '');
+
+    }, {offset: '88%'});
+
+
+    $("#ul-ombuds").waypoint(function(){
+            $("#ul-ombuds").addClass('animated fadeIn').css('opacity', '');
+
+    }, {offset: '88%'});
+
+    $("#close_button").waypoint(function(){
+            $("#close_button").addClass('animated fadeIn').css('opacity', '');
+
+    }, {offset: '88%'})
 
 });
 
@@ -343,27 +446,5 @@ $typewriter.waypoint(function(){
     console.log("is it typewriter");
 
 }, { offset: '95%' });
-
-
-/*GOOGLE MAPS FOR RESUME SECTION*/
-$("#portfolioModal1").on('mouseenter', function() {
-  google.maps.event.trigger(map, 'resize');
-
-  console.log("ummmmmm is it working??");
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

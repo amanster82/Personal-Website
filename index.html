@@ -706,32 +706,33 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-title" style="text-align: center;">
                             
-                            <h2>Aman Bhayani</h2>
-                            <p class="item-intro text-muted">Qualifications and Experience.</p>
+                            <h2 class="tt">Aman Bhayani</h2>
+                            <p class="item-intro text-muted" style="opacity: 0">Qualifications and Experience.</p>
                         </div>
 
                     </div>
 
-                <div class="col-lg-12">
-                    <h3 class="education animated fadeInUp">Education</h3>
+                <div class="col-lg-12" id="mapEd" style="opacity: 0; animation-delay: 0.5s;">
+                    <h3 class="education">Education</h3>
                     <div class="embed-container maps">
-                        <div class="animated fadeInUp" id="map" style="height: 400px;"></div>
+                        <div id="map" style="height: 400px;"></div>
                     </div>   
                 </div>
 
                     <div class="col-lg-6">
-                        <div class="modal-body animated zoomInDown">
+                        <div class="modal-body" id="uni2" style="opacity: 0; animation-delay: 1.5s">
                             <h3>The University of Victoria <br><small> 2014 - Present</small></br></h3>
                             <p>Switched schools to persue internship opportunities, and currently studying Computer Science Majoring in Software Engineering.</p>
                         </div>
                     </div>
 
                     <div class="col-lg-6">
-                        <div class="modal-body animated zoomInDown">
+                        <div class="modal-body" id="uni1" style="opacity: 0; animation-delay: 1s">
                             <h3>The University of British Columbia: Okanagan Campus <br><small> 2011 - 2014</small></br></h3>
                             <p>Studied Microbiology, Business, and finally landed an interest in Computer Science.</p>
                         </div>
                     </div>
+
 
 
                     <div class="col-lg-12">
@@ -776,19 +777,25 @@
                     
 
                     <div class="col-lg-12" style="padding-top: 68px;">
-                        <h3 class="Experience">Relevant Experience</h3>
+                        <h3 class="Experience" style="opacity: 0;">Relevant Experience</h3>
                     </div>
 
                     <div class="col-lg-12">
-                        <img src="img/cgi.png"/>
-                        <h4> CGI <br><small>System Analyst - May 2016 to December 2016</small> </h4>
+                        <img id="cgi" src="img/cgi.png" style="opacity: 0; animation-delay: 1;" />
+                        <h4 id="title-cgi" style="opacity: 0; animation-delay: 1.5;"> CGI <br><small>System Analyst - May 2016 to December 2016</small> </h4>
                         
-                        <ul> 
-                        <li>Received client requests, collected relevant details, determined the severity and impact, consulted with various stakeholders, identified solutions, or escalated according to protocols. </li>
+                        <ul id="ul-cgi" style="opacity: 0; animation-delay: 1.5;"> 
+                        <li>Supported and applied software tests, patches and development changes to Panorama - a health web application that tracks and controls infectious disease across populations</li>
                         
-                        <li>Performed diagnostic tests, reviewed previous actions, guided clients to test/resolve issues, documented and followed up to ensure incidents were resolved. </li>
+                        <li>Worked closely with IBM Canada in partnership to support perfomance, scalibilty and stability. Supporting both production and non-production environments on a variety of platforms including Unix, Linux and Windows.</li>
 
-                        <li>Undertook various projects such as researching hardware and software solutions to business problems.</li>
+                        <li>Maintained and developed comprehensive Standard Unix Shell scripts written both in Bash and Perl. Made an impact by writing scripts that would send an email to staff when certain errors occured on the application server.</li>
+
+                        <li>Reasearched and deployed performance monitoring tools to track the performance of the application, and alerted staff when components of the system would be stressed.</li>
+
+                        <li>Ran SQL statments that would update schemas for the applications database, as part of a routine database refresh.</li>
+
+                        <li>Part-took in weekly team meetings and discussed the status/progress of the app from various partners such as: IBM, HP, Canada's Ministry of Health, and BCYDC.</li>
 
                         </ul>
 
@@ -797,11 +804,10 @@
 
 
                     <div class="col-lg-12" style="padding-top: 68px;">
-                        <img src="img/logo_grey.png"/>
-                        <h4> Office of the Ombudsperson<br><small>Project and Service Desk Analyst - Summer 2015</small> </h4>
-                        
+                        <img id ="ombuds" src="img/logo_grey.png" style="opacity: 0; " />
+                        <h4 id="title-ombuds" style="opacity: 0;"> Office of the Ombudsperson<br><small>Project and Service Desk Analyst - Summer 2015</small> </h4>
 
-                        <ul> 
+                        <ul id="ul-ombuds" style="opacity: 0; "> 
                         <li>Received client requests, collected relevant details, determined the severity and impact, consulted with various stakeholders, identified solutions, or escalated according to protocols. </li>
                         
                         <li>Performed diagnostic tests, reviewed previous actions, guided clients to test/resolve issues, documented and followed up to ensure incidents were resolved. </li>
@@ -809,12 +815,11 @@
                         <li>Undertook various projects such as researching hardware and software solutions to business problems.</li>
 
                         </ul>
+            		</div>
 
+            	<div class="col-lg-12" id="close_button" style="text-align: center">	
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-        
-
-            </div>
+                </div>
         </div>
     </div>
 

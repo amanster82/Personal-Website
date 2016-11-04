@@ -1,5 +1,10 @@
 
-                  
+  /*GOOGLE MAPS FOR RESUME SECTION*/
+$("#portfolioModal1").on('mouseenter', function() {
+  google.maps.event.trigger(map, 'resize');
+
+  console.log("ummmmmm is it working??");
+});
 
   /*Reload the map when mouse enters the element*/                          
     $("#button_click").on("click", function() {
