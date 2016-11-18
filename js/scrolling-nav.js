@@ -427,7 +427,7 @@ $map.waypoint(function(){
     $map.addClass('animated fadeInUp');
     console.log("this is working!");
 
-}, { offset: '30%' });
+}, { offset: '50%' });
 
 
 var $contact= $('.content');
@@ -435,7 +435,7 @@ var $contact= $('.content');
 $contact.waypoint(function(){
     $contact.addClass('animated fadeInDown');
     console.log("HELLLOOOOOOOOOO");
-}, { offset: '90%' });
+}, { offset: '50%' });
 
 
 var $typewriter= $('.withLove');

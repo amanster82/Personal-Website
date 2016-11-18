@@ -107,7 +107,7 @@ of those sections to manage the look and feel of the site. */
 
 .arrow{
 /* -webkit-animation-delay: 2s; */
- animation-delay: 2s; /*Firefox, opera, safari*/
+  animation-delay: 2s; /*Firefox, opera, safari*/
 }
 
 
@@ -165,7 +165,6 @@ of those sections to manage the look and feel of the site. */
 
 
 #about-info{
-    padding-top: 150px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -458,6 +457,7 @@ a { color: inherit;
 
 .maps iframe{
     pointer-events: none;
+    animation-delay: 0.5s;
 }
 
 .maps #map{

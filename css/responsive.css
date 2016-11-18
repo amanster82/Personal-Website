@@ -1,71 +1,155 @@
-@media (min-width: 1440px){
+@media (min-width: 320px) and (max-width: 374px){
+
+	.AmanBhayani{
+			font-size: 70px !important;
+		}
 
 	.about-section {
-	    height: 105%;
-	    position: relative;
+		height: 150%;
 	}
-
 
 	.project-section {
-	    height: 105%;
-	    position: relative;
-	}
-
-	.contact-section2{
-		padding-top: 95px;
+	    height: 295%;
 
 	}
 
-		#header{
-	    padding-bottom: 100px;
+
+	.contact-section2 {
+    	padding-top: 60px;
 	}
+
 }
 
+@media (min-width: 375px) and (max-width: 410px){
+	
+	.AmanBhayani{
+			font-size: 70px !important;
+		}
 
-@media (max-width: 1366px){
-
-	#about-info{
-	    padding-top: 90px;
+	.about-section {
+	    height: 142%;
 	}
 
 	.project-section {
-	    height: 120%;
-	    position: relative;
+	    height: 292%;
+
+	}
+
+
+	.contact-section2 {
+    	padding-top: 30px;
+	}
+
+	#icons{
+
+		padding-top: 30px;
+
+	}
+
+}
+
+@media (min-width: 411px) and (max-width: 434px){
+	
+
+	.about-section {
+		    height: 120%;
+		}
+
+
+	.project-section {
+	    height: 250%;
+
+	}
+
+
+	.contact-section2 {
+    	padding-top: 220px;
+	}
+
+
+	#icons{
+
+		padding-top: 30px;
+
+	}
+
+
+}
+
+@media (min-width: 435px) and (max-width: 639px){
+	
+
+	.about-section {
+		    height: 115%;
+		}
+
+
+	.project-section {
+	    height: 250%;
+
+	}
+
+
+	.contact-section2 {
+    	padding-top: 20px;
+	}
+
+
+	#icons{
+
+		padding-top: 30px;
+
+	}
+
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+
+
+	.about-section {
+	    height: 190%;
+	}
+
+
+	.project-section {
+	    height: 490%;
+
+	}
+
+	.contact-section{
+		height: 95%;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 950px){
+
+	#about-info {
+    	padding-top: 82px;
+	}
+
+	.about-section{
+		height: 120%;
+	}
+
+	.project-section{
+		height: 300%;
 	}
 
 	.contact-section2 {
-    	padding-top: 68px;
+	    padding-top: 40px;
+
+	}
+
+	#icons{
+
+		padding-top: 30px;
+
 	}
 
 }
 
-
-
-@media (max-width: 1199px){
-
-	.project-section{
-		height: 180%;
-	}
-
-		.img-parent {
-    position: relative;
-    margin-bottom: 15px;	
-	}
-   
-    .contact-section {
-    height: 60%;
-	
-	}
-
-	 .contact-section2 {
-    padding-top: 267px;
-	
-	}
-
-
-
-
-@media (max-width: 991px){
+@media (min-width: 991px) and (max-width: 1198px){
 
 	#about-info {
     	padding-top: 30px;
@@ -106,161 +190,116 @@
 
 }
 
-
-
-@media (max-width: 768px){
+@media (min-width: 1199px) and (max-width: 1365px){
 
 	#about-info {
-    	padding-top: 82px;
+    	padding-top: 50px;
+	}
+	
+	#bio{
+	font-size: 18px;
 	}
 
-	.about-section{
-		height: 120%;
+	.facts{
+		font-size: 16px;
 	}
 
 	.project-section{
-		height: 300%;
+		height: 120%;
 	}
 
-	.contact-section2 {
-	    padding-top: 40px;
-
+		.img-parent {
+    position: relative;
+    margin-bottom: 15px;	
+	}
+   
+    .contact-section {
+    height: 60%;
+	
 	}
 
-	#icons{
-
-		padding-top: 30px;
-
+	 .contact-section2 {
+    padding-top: 60px;
+	
 	}
-
 }
 
+@media (min-width: 1366px) and (max-width: 1439px){
 
-@media (max-width: 640px) {
-
-
-	.about-section {
-	    height: 190%;
+	#bio{
+	font-size: 18px;
 	}
 
+	.facts{
+		font-size: 16px;
+	}
+
+	#about-info{
+	    padding-top: 90px;
+	}
 
 	.project-section {
-	    height: 490%;
-
-	}
-
-	.contact-section{
-		height: 95%;
-	}
-
-}
-
-
-@media (max-width: 435px){
-	
-
-.about-section {
-	    height: 115%;
-	}
-
-
-	.project-section {
-	    height: 250%;
-
-	}
-
-
-	.contact-section2 {
-    	padding-top: 20px;
-	}
-
-
-	#icons{
-
-		padding-top: 30px;
-
-	}
-
-}
-
-
-
-@media (max-width: 411px){
-	
-
-.about-section {
 	    height: 120%;
+	    position: relative;
+	}
+
+	.contact-section2 {
+    	padding-top: 68px;
+	}
+
+}
+
+@media (min-width: 1440px){
+
+	#bio{
+		font-size: 18px;
+	}
+
+	.facts{
+			font-size: 16px;
 	}
 
 
 	.project-section {
-	    height: 250%;
+	    height: 105%;
+	    position: relative;
+	}
+
+	.contact-section2{
+		padding-top: 95px;
 
 	}
 
-
-	.contact-section2 {
-    	padding-top: 220px;
+		#header{
+	    padding-bottom: 100px;
 	}
-
-
-	#icons{
-
-		padding-top: 30px;
-
-	}
-
-
 }
 
 
 
 
-@media (max-width: 375px){
-	
-
-#info h1{
-		font-size: 70px !important;
-	}
-
-	.about-section {
-	    height: 142%;
-	}
-
-	.project-section {
-	    height: 292%;
-
-	}
 
 
-	.contact-section2 {
-    	padding-top: 30px;
-	}
-
-	#icons{
-
-		padding-top: 30px;
-
-	}
-
-}
 
 
-@media (max-width: 320px){
-
-	.about-section {
-		height: 150%;
-	}
-
-	.project-section {
-	    height: 295%;
-
-	}
 
 
-	.contact-section2 {
-    	padding-top: 60px;
-	}
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
