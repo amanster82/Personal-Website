@@ -496,3 +496,12 @@ a { color: inherit;
 @keyframes blink {
   to{opacity: .0;}
 }
+
+.help-block{
+  color: red !important;
+  list-style-type:none
+}
+
+.help-block li{
+  list-style-type:none
+}
