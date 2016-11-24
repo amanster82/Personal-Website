@@ -23,11 +23,14 @@ $(document).ready(function(){
 	//hide .navbar first
 	$(".navbar").hide();
 
+var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
     $('.myName').addClass('animated tada');
     $('.AmanBhayani').addClass('animated rubberBand');
     $('.coolThings').addClass('animated zoomIn');
     $('.arrow').addClass('animated flip');
+
+
 
 	//fade in .navbar
 	$(function(){
@@ -191,11 +194,11 @@ $innovation.waypoint(
             $AmanBhayani.addClass('animated flipInX').one(animationEnd,function(){
                 $(this).removeClass('animated flipInX');
                 qualEx('.item-intro');
-    });;
+    });
 
     function qualEx(qualEx){
             $(qualEx).addClass('animated fadeInDown').one(animationEnd, function(){
-                 $(this).removeClass('animated fadeInDown')
+                 $(this).removeClass('animated fadeInDown');
                  $(this).css('opacity', '1');
                  
             });
@@ -288,12 +291,6 @@ $( "#portfolioModal1" ).scroll(function() {
     }, {offset: '70%'});
 
 
-    $(".Experience").waypoint(function(){
-            $(".Experience").addClass('animated fadeIn').css('opacity', '');
-
-    }, {offset: '70%'});
-
-
     $("#cgi").waypoint(function(){
             $("#cgi").addClass('animated fadeIn').css('opacity', '');
 
@@ -314,24 +311,24 @@ $( "#portfolioModal1" ).scroll(function() {
     $("#ombuds").waypoint(function(){
             $("#ombuds").addClass('animated fadeIn').css('opacity', '');
 
-    }, {offset: '88%'});
+    }, {offset: '90%'});
 
 
     $("#title-ombuds").waypoint(function(){
             $("#title-ombuds").addClass('animated fadeIn').css('opacity', '');
 
-    }, {offset: '88%'});
+    }, {offset: '90%'});
 
 
     $("#ul-ombuds").waypoint(function(){
             $("#ul-ombuds").addClass('animated fadeIn').css('opacity', '');
 
-    }, {offset: '88%'});
+    }, {offset: '95%'});
 
     $("#close_button").waypoint(function(){
             $("#close_button").addClass('animated fadeIn').css('opacity', '');
 
-    }, {offset: '88%'})
+    }, {offset: '90%'})
 
 });
 
