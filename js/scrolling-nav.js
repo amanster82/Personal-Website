@@ -88,7 +88,7 @@ $("#about img").hover(
 
 
 
-$("#services i.fa").hover(
+$("#services i.fa, #button_click").hover(
 
 //Mouse In
     function() {
@@ -182,6 +182,14 @@ $innovation.waypoint(
         $innovation.stop().delay(2000).animate({color: 'white', backgroundColor: '#FCAC45'}, 1000).animate({color: '#333', backgroundColor: '#fff'}, 1000);
         this.destroy();
 }, { offset: '70%' });
+
+var $ExperienceButton= $('#button_click');
+
+$ExperienceButton.waypoint(
+    function(){
+        $ExperienceButton.stop().delay(2500).animate({ fontSize: '2em', borderColor: 'blue'}, 1000).animate({fontSize: '1.2em', color: '#333', backgroundColor: '#fff', borderColor: 'blue',  border: 'solid'}, 1000);
+        this.destroy();
+    }, { offset: '90%' });
 
 
 

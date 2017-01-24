@@ -7,7 +7,7 @@ $("#portfolioModal1").on('mouseenter', function() {
 });
 
   /*Reload the map when mouse enters the element*/                          
-    $("#button_click").on("click", function() {
+    $(".communication, .design, .innovation, #button_click").on("click", function() {
 
                                 var locations = [
                                   ['Victoria BC', 48.4267596, -123.3934356, 1 ],
