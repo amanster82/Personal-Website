@@ -20,6 +20,9 @@
 $(document).ready(function(){
 
 	
+    console.log("Hello there! If you are reading this, feel free to look over my source code. Have a good day!");
+
+
 	//hide .navbar first
 	$(".navbar").hide();
 
@@ -105,7 +108,7 @@ $("#services i.fa, #button_click").hover(
 
 
 $("#project .img-parent").hover(function() {
-	console.log("inside hover");
+	//console.log("inside hover");
 	 $('#project .img-parent img').toggleClass("imgblur");
 		$(this).toggleClass("active");
 });
@@ -113,7 +116,7 @@ $("#project .img-parent").hover(function() {
 
 $("#mail").hover(function() {
 
-  console.log("inside hover");
+  //console.log("inside hover");
     $(this).stop().animate({color: '#ffc107', fontSize: '2.5em'}, 300);
     }, function(){
     $(this).stop().animate({color: 'white', fontSize: '2em'}, 300);
@@ -122,7 +125,7 @@ $("#mail").hover(function() {
 
 $("#facebook").hover(function() {
 
-  console.log("inside hover");
+ // console.log("inside hover");
     $(this).stop().animate({color: '##415e9b', fontSize: '2.5em'}, 300);
     }, function(){
     $(this).stop().animate({color: 'white', fontSize: '2em'}, 300);
@@ -130,7 +133,7 @@ $("#facebook").hover(function() {
 
 $("#linkedin").hover(function() {
  
-  console.log("inside hover");
+ // console.log("inside hover");
     $(this).stop().animate({color: '#0077b5', fontSize: '2.5em'}, 300);
     }, function(){
     $(this).stop().animate({color: 'white', fontSize: '2em'}, 300);
@@ -138,7 +141,7 @@ $("#linkedin").hover(function() {
 
 $("#github").hover(function() {
 
-  console.log("inside hover");
+ // console.log("inside hover");
     $(this).stop().animate({color: '#4caf50', fontSize: '2.5em'}, 300);
     }, function(){
     $(this).stop().animate({color: 'white', fontSize: '2em'}, 300);
@@ -152,7 +155,7 @@ var $aboutsection= $('#about img');
 
 $aboutsection.waypoint(function(){
     $aboutsection.addClass('animated bounceIn').css("opacity", "");
-    console.log("this is working!");
+ //   console.log("this is working!");
 
 }, { offset: '70%' });
 
@@ -342,80 +345,6 @@ $( "#portfolioModal1" ).scroll(function() {
 
 
 
-//$('.parallax-window').parallax({imageSrc: 'img/computer_science.jpg'});
-
-
-
-
-//Projects
-
-
-//flexslider
-$("#initialize_modal").on("click", function() {
-    console.log("it fired!")
-setTimeout(function() {
-      $('.flexslider1').flexslider({
-        animation: "fade",
-        prevText: "",
-        nextText: "",
-      });
-    }, 100);
-
-});
-
-//flexslider
-$("#initialize_modal2").on("click", function(){
-
-    setTimeout(function() {
-      $('.flexslider2').flexslider({
-        animation: "fade",
-        prevText: "",
-        nextText: "",
-      });
-    }, 100);
-
-});
-
-
-$("#initialize_modal3").on("click", function(){
-
-    setTimeout(function() {
-      $('.flexslider3').flexslider({
-        animation: "fade",
-        prevText: "",
-        nextText: "",
-      });
-    }, 100);
-
-});
-
-
-$("#initialize_modal4").on("click", function(){
-
-    setTimeout(function() {
-      $('.flexslider4').flexslider({
-        animation: "fade",
-        prevText: "",
-        nextText: "",
-      });
-    }, 100);
-
-});
-
-$("#initialize_modal6").on("click", function(){
-
-    setTimeout(function() {
-      $('.flexslider6').flexslider({
-        animation: "fade",
-        prevText: "",
-        nextText: "",
-      });
-    }, 100);
-
-});
-
-
-
 var $projects= $('#project .img-parent img');
 
 $projects.waypoint(
@@ -430,7 +359,7 @@ var $map= $('.map-thing');
 
 $map.waypoint(function(){
     $map.addClass('animated fadeInUp');
-    console.log("this is working!");
+   // console.log("this is working!");
 
 }, { offset: '50%' });
 
@@ -439,7 +368,7 @@ var $contact= $('.content');
 
 $contact.waypoint(function(){
     $contact.addClass('animated fadeInDown');
-    console.log("HELLLOOOOOOOOOO");
+    //console.log("HELLLOOOOOOOOOO");
 }, { offset: '50%' });
 
 
@@ -448,7 +377,7 @@ var $typewriter= $('.withLove');
 $typewriter.waypoint(function(){
     
     $typewriter.addClass('typewriter');
-    console.log("is it typewriter");
+    //console.log("is it typewriter");
 
 }, { offset: '95%' });
 
