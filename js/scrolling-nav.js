@@ -28,13 +28,18 @@ $(document).ready(function(){
 
 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-    $('.myName').addClass('animated tada');
-    $('.AmanBhayani').addClass('animated rubberBand');
-    $('.coolThings').addClass('animated zoomIn');
-    $('.arrow').addClass('animated flip');
+    $('.myName').addClass('animated tada').one(animationEnd, function(){
+        AmanBhayani();
+    });
 
-
-
+    function AmanBhayani () {
+        $('.AmanBhayani').addClass('animated rubberBand').one(animationEnd, function(){
+            $('.coolThings').addClass('animated zoomIn').one(animationEnd, function(){
+                $('.arrow').addClass('animated flip');
+            });
+        });
+    }
+   
 	//fade in .navbar
 	$(function(){
 		$(window).scroll(function(){
@@ -107,11 +112,19 @@ $("#services i.fa, #button_click").hover(
 /* Blurring to focus on projects being selected. */
 
 
-$("#project .img-parent").hover(function() {
+$("#project .img-parent").hover(
 	//console.log("inside hover");
-	 $('#project .img-parent img').toggleClass("imgblur");
-		$(this).toggleClass("active");
-});
+    function (){
+        $(this).addClass("active");
+        $("#project .img-parent").addClass("imgblur");
+    }, 
+
+    function(){
+        $(this).removeClass("active");
+        $("#project .img-parent").removeClass("imgblur");
+    },
+		
+);
 
 
 $("#mail").hover(function() {
@@ -160,39 +173,41 @@ $aboutsection.waypoint(function(){
 }, { offset: '70%' });
 
 //Service
-var $communication= $('#services i.fa.communication');
+var flag = true;
 
+var $communication= $('#services i.fa.communication');
 $communication.waypoint(
-    function(){
-        $communication.stop().animate({color: 'white', backgroundColor: '#FCAC45'}, 1000).animate({color: '#333', backgroundColor: '#fff'}, 1000);
-        this.destroy();
-}, { offset: '70%' });
+    function communication(){
+        if(flag){
+            $communication.stop().animate({color: 'white', backgroundColor: '#FCAC45'}, 1000, function(){
+                design();
+            }).animate({color: '#333', backgroundColor: '#fff'}, 1000, "swing");
+            flag = false;
+        }
+    }, { offset: '70%' });
+
 
 
 var $design= $('#services i.fa.design');
-
-$communication.waypoint(
-    function(){
-        $design.stop().delay(1000).animate({color: 'white', backgroundColor: '#FCAC45'}, 1000).animate({color: '#333', backgroundColor: '#fff'}, 1000);
-        this.destroy();
-}, { offset: '70%' });
+function design(){
+        $design.stop().animate({color: 'white', backgroundColor: '#FCAC45'}, 1000,  function(){
+            innovation();
+        }).animate({color: '#333', backgroundColor: '#fff'}, 1000);
+    };
 
 
 var $innovation= $('#services i.fa.innovation');
+function innovation(){
+        $innovation.stop().animate({color: 'white', backgroundColor: '#FCAC45'}, 1000, function(){
+            experience();
+        }).animate({color: '#333', backgroundColor: '#fff'}, 1000);
+    };
 
-$innovation.waypoint(
-    function(){
-        $innovation.stop().delay(2000).animate({color: 'white', backgroundColor: '#FCAC45'}, 1000).animate({color: '#333', backgroundColor: '#fff'}, 1000);
-        this.destroy();
-}, { offset: '70%' });
 
 var $ExperienceButton= $('#button_click');
-
-$ExperienceButton.waypoint(
-    function(){
-        $ExperienceButton.stop().delay(2500).animate({ fontSize: '2em', borderColor: 'blue'}, 1000).animate({fontSize: '1.2em', color: '#333', backgroundColor: '#fff', borderColor: 'blue',  border: 'solid'}, 1000);
-        this.destroy();
-    }, { offset: '90%' });
+function experience(){
+        $ExperienceButton.stop().animate({ fontSize: '2em', borderColor: 'blue'}, 1000).animate({fontSize: '1.2em', color: '#333', backgroundColor: '#fff', borderColor: 'blue',  border: 'solid'}, 1000);
+    };
 
 
 

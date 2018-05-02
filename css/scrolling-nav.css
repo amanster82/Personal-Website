@@ -93,22 +93,20 @@ of those sections to manage the look and feel of the site. */
 
 
 .myName{
-}
+    
+} 
 
 .AmanBhayani{
- /* -webkit-animation-delay: 1s;*/
-  animation-delay: 1s; /*Firefox, opera, safari*/
+    animation-duration: 0.8s !important;
 }
 
-.coolThings{
- /* -webkit-animation-delay: 1.5s; */
-    animation-delay: 1.5s; /*Firefox, opera, safari*/
-}
+.coolThings {
+    animation-duration: 0.5s !important;
+} 
 
 .arrow{
-/* -webkit-animation-delay: 2s; */
-  animation-delay: 2s; /*Firefox, opera, safari*/
-}
+
+} 
 
 
 .arrow a{
@@ -168,6 +166,7 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: white;
+    padding-top: 50px;
 }
 
 
@@ -200,7 +199,7 @@ of those sections to manage the look and feel of the site. */
 
 
 .project-section {
-    height: 100%;
+    height: auto;
     position: relative;
     padding-top: 60px;
 }
@@ -242,6 +241,8 @@ of those sections to manage the look and feel of the site. */
 .imgblur{
     -webkit-filter: blur(1px);
    -webkit-transform: scale(0.97); 
+   transition:filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+   
 
    filter: blur(1px);
    transform: scale(0.97);
@@ -255,13 +256,13 @@ of those sections to manage the look and feel of the site. */
    filter: blur(0px) !important;
 }
 
-.img-parent{
+ .img-parent{
     position: relative;
-   -webkit-transform: scale(0.97); 
-   transform: scale(0.97);
+   transition:filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+   
 }
 
-.img-parent.active .img-text {;
+.img-parent.active .img-text {
     opacity: 1;
 }
 
@@ -330,14 +331,8 @@ of those sections to manage the look and feel of the site. */
 
 .map-thing {
     min-height: 500px;
-<<<<<<< Updated upstream
     padding-bottom: 10px;
     opacity: 0;
-=======
-    padding-bottom: 50px;
-
-    background-color: rgb(229, 227, 223);
->>>>>>> Stashed changes
 }
 
 .googleMap{
@@ -356,6 +351,7 @@ footer .glyphicon {
     background: #eee;
     padding-top: 10px;
     padding-bottom: 50px;
+    height: auto;
 }
 
 #contact2 i.fa {
